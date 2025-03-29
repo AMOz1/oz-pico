@@ -38,10 +38,12 @@ We've customized the framework to use Source Sans 3 as our primary font, with se
   font-family: 'Source Sans 3';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/source-sans-3/source-sans-3-v18-latin-regular.woff2') format('woff2');
+  src: url('/fonts/source-sans-3/source-sans-3-v18-latin-regular.woff2') format('woff2');
 }
 /* Other weights and styles... */
 ```
+
+> **Important**: Note the use of absolute paths with leading slashes in the font URLs. This is crucial for the minified CSS to work properly, as the build process may not correctly handle relative paths in minified files.
 
 3. Imported the fonts file in `scss/pico.scss`:
 ```scss
