@@ -1,0 +1,57 @@
+// Custom overrides for Pico CSS
+// These values will override the defaults in _styles.scss
+
+@use "sass:map";
+
+// Override the default spacing variables
+:root {
+  // Font family
+  --oz-pico-font-family-sans-serif:
+    "Source Sans 3", system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
+    "Helvetica Neue", sans-serif, var(--oz-pico-font-family-emoji);
+  --oz-pico-font-family: var(--oz-pico-font-family-sans-serif);
+
+  // Typography
+  --oz-pico-font-size: 95%; // Default is 100% - making it slightly smaller
+  --oz-pico-line-height: 1.5; // Default is 1.5
+
+  // Base spacing (affects many components)
+  --oz-pico-spacing: 0.75rem; // Default is 1rem
+
+  // Form elements and buttons
+  --oz-pico-form-element-spacing-vertical: 0.35rem; // Default is 0.75rem
+  --oz-pico-form-element-spacing-horizontal: 0.55rem; // Default is 1rem
+}
+
+// Light theme (default)
+:root:not([data-theme="dark"]) {
+  --oz-pico-secondary-background: #eff1f4; // Slate 50
+  --oz-pico-secondary-hover-background: #dfe3eb; // Slate 100 for hover
+  --oz-pico-secondary-inverse: rgb(30 41 59); // Slate 800 for text
+  --oz-pico-secondary-border: rgba(255, 255, 255, 0); // invisible,
+  --oz-pico-contrast-background: #00003c; // SR secondary
+  --oz-pico-contrast-hover-background: #484878; //
+  --oz-pico-contrast-inverse: #e9e9e9; // Slate 800 for text
+  --oz-pico-contrast-border: #rgba(24, 28, 37, 0); // invisible,
+  --oz-pico-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; //
+  --oz-pico-table-row-stripped-background-color: rgba(
+    111,
+    120,
+    135,
+    0.0375
+  ); // table row background
+}
+
+// Dark theme
+:root[data-theme="dark"] {
+  --oz-pico-secondary-background: rgb(30 41 59); // Slate 800
+  --oz-pico-secondary-hover: rgb(51 65 85); // Slate 700 for hover
+  --oz-pico-secondary-inverse: #e9e9e9; // Slate 50 for text
+  --oz-pico-secondary-border: rgba(24, 28, 37, 0); // Slate 900 for border (invisible)
+  --oz-pico-contrast-background: #ff0000; // SR primary
+  --oz-pico-contrast-hover-background: #ff4848; //
+  --oz-pico-contrast-inverse: #e9e9e9; // Slate 800 for text
+  --oz-pico-contrast-border: rgba(24, 28, 37, 0); // invisible,
+  --oz-pico-box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; //
+  --oz-pico-table-row-stripped-background-color: rgba(111, 120, 135, 0.07); // table row background
+}
