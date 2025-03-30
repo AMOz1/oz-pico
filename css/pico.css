@@ -2964,11 +2964,11 @@ textarea,
     "Source Sans 3", system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
     "Helvetica Neue", sans-serif, var(--oz-pico-font-family-emoji);
   --oz-pico-font-family: var(--oz-pico-font-family-sans-serif);
-  --oz-pico-font-size: 95%;
+  --oz-pico-font-size: 98%;
   --oz-pico-line-height: 1.5;
-  --oz-pico-spacing: 0.75rem;
-  --oz-pico-form-element-spacing-vertical: 0.35rem;
-  --oz-pico-form-element-spacing-horizontal: 0.55rem;
+  --oz-pico-spacing: 0.95rem;
+  --oz-pico-form-element-spacing-vertical: 0.55rem;
+  --oz-pico-form-element-spacing-horizontal: 0.75rem;
 }
 
 :root:not([data-theme=dark]) {
