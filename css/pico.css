@@ -1286,7 +1286,7 @@ optgroup,
 select,
 textarea {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: var(--oz-pico-line-height);
   font-family: inherit;
   letter-spacing: inherit;
@@ -2836,11 +2836,11 @@ textarea,
     system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue",
     sans-serif, var(--oz-pico-font-family-emoji);
   --oz-pico-font-family: var(--oz-pico-font-family-sans-serif);
-  --oz-pico-font-size: 98%;
+  --oz-pico-font-size: 110%;
   --oz-pico-line-height: 1.5;
-  --oz-pico-spacing: 0.95rem;
-  --oz-pico-form-element-spacing-vertical: 0.55rem;
-  --oz-pico-form-element-spacing-horizontal: 0.75rem;
+  --oz-pico-spacing: 0.9rem;
+  --oz-pico-form-element-spacing-vertical: 0.35rem;
+  --oz-pico-form-element-spacing-horizontal: 0.55rem;
 }
 
 :root:not([data-theme=dark]) {

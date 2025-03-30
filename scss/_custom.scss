@@ -12,15 +12,15 @@
   --oz-pico-font-family: var(--oz-pico-font-family-sans-serif);
 
   // Typography
-  --oz-pico-font-size: 98%; // Default is 100% - making it slightly smaller
+  --oz-pico-font-size: 110%; // Default is 100% - making it slightly smaller
   --oz-pico-line-height: 1.5; // Default is 1.5
 
   // Base spacing (affects many components)
-  --oz-pico-spacing: 0.95rem; // Default is 1rem
+  --oz-pico-spacing: 0.9rem; // Default is 1rem
 
   // Form elements and buttons
-  --oz-pico-form-element-spacing-vertical: 0.55rem; // Default is 0.75rem
-  --oz-pico-form-element-spacing-horizontal: 0.75rem; // Default is 1rem
+  --oz-pico-form-element-spacing-vertical: 0.35rem; // Default is 0.75rem
+  --oz-pico-form-element-spacing-horizontal: 0.55rem; // Default is 1rem
 }
 
 // Light theme (default)

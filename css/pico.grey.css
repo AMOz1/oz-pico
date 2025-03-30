@@ -1286,7 +1286,7 @@ optgroup,
 select,
 textarea {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: var(--oz-pico-line-height);
   font-family: inherit;
   letter-spacing: inherit;

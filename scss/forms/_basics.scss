@@ -20,7 +20,7 @@
   #{$parent-selector} select,
   #{$parent-selector} textarea {
     margin: 0; // 2
-    font-size: 1rem; // 1
+    font-size: 0.9rem; // 1
     line-height: var(#{$css-var-prefix}line-height); // 1
     font-family: inherit; // 1
     letter-spacing: inherit; // 2
@@ -67,6 +67,7 @@
   // 1. Correct the odd appearance in Chrome and Safari
   // 2. Correct the outline style in Safari
   #{$parent-selector} [type="search"] {
+    appearance: textfield;
     -webkit-appearance: textfield; // 1
     outline-offset: -2px; // 2
   }
