@@ -187,3 +187,45 @@ Important files for customization:
 
 ---
 *This documentation will be updated as we make more customizations to the framework.* 
+
+## Font Loading Update (March 30, 2024)
+
+We've updated our approach to font loading:
+
+### Removed Embedded Fonts
+
+We've removed the embedded Source Sans 3 font from the CSS for the following reasons:
+- Better separation of concerns: HTML loads fonts, CSS handles styling
+- Improved performance through Google Fonts' optimized delivery
+- Easier maintenance without font files in the project
+- Better caching as Google Fonts are likely already cached in many browsers
+
+### Changes Made:
+
+1. Removed the `scss/_fonts.scss` file with all @font-face declarations
+2. Updated `scss/pico.scss` to remove the font import
+3. Modified font family declarations in `scss/_custom.scss` to use system fonts by default
+4. Created a new approach using Google Fonts in HTML templates
+
+### How to Use Source Sans 3 in Your Projects
+
+Instead of embedded fonts, add the following to your HTML head:
+
+```html
+<!-- Google Fonts - Source Sans 3 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+<!-- Add custom styles to specify the font -->
+<style>
+    :root {
+        --oz-pico-font-family-sans-serif: 'Source Sans 3', system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--oz-pico-font-family-emoji);
+        --oz-pico-font-family: var(--oz-pico-font-family-sans-serif);
+    }
+</style>
+```
+
+This approach provides better performance and follows best practices for web font loading.
+
+See the `test-with-google-font.html` file for a complete example. 

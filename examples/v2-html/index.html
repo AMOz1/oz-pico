@@ -7,11 +7,24 @@
     <title>Preview • Pico CSS</title>
     <meta name="description" content="A pure HTML example, without dependencies.">
 
+    <!-- Google Fonts - Source Sans 3 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    
     <!-- Pico.css -->
     <link
       rel="stylesheet"
       href="../../css/pico.min.css"
     >
+    
+    <!-- Apply Source Sans 3 from Google Fonts -->
+    <style>
+      :root {
+        --oz-pico-font-family-sans-serif: 'Source Sans 3', system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue", sans-serif, var(--oz-pico-font-family-emoji);
+        --oz-pico-font-family: var(--oz-pico-font-family-sans-serif);
+      }
+    </style>
   </head>
 
   <body>

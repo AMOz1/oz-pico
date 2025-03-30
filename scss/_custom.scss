@@ -7,8 +7,8 @@
 :root {
   // Font family
   --oz-pico-font-family-sans-serif:
-    "Source Sans 3", system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial,
-    "Helvetica Neue", sans-serif, var(--oz-pico-font-family-emoji);
+    system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue",
+    sans-serif, var(--oz-pico-font-family-emoji);
   --oz-pico-font-family: var(--oz-pico-font-family-sans-serif);
 
   // Typography
