@@ -975,6 +975,7 @@ button,
 [type=submit],
 [type=reset],
 [type=button] {
+  appearance: button;
   -webkit-appearance: button;
 }
 
@@ -1286,7 +1287,7 @@ optgroup,
 select,
 textarea {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: var(--oz-pico-line-height);
   font-family: inherit;
   letter-spacing: inherit;
@@ -1322,6 +1323,7 @@ textarea {
 }
 
 [type=search] {
+  appearance: textfield;
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
@@ -1846,7 +1848,6 @@ input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=time] {
   transition: background-color var(--oz-pico-transition), transform var(--oz-pico-transition);
 }
 [type=range]::-moz-range-thumb {
-  -webkit-appearance: none;
   width: 1.25rem;
   height: 1.25rem;
   margin-top: -0.4375rem;
@@ -1858,7 +1859,6 @@ input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=time] {
   transition: background-color var(--oz-pico-transition), transform var(--oz-pico-transition);
 }
 [type=range]::-ms-thumb {
-  -webkit-appearance: none;
   width: 1.25rem;
   height: 1.25rem;
   margin-top: -0.4375rem;
@@ -2808,6 +2808,7 @@ select,
 summary,
 textarea,
 [tabindex] {
+  touch-action: manipulation;
   -ms-touch-action: manipulation;
 }
 
@@ -2836,11 +2837,11 @@ textarea,
     system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, Helvetica, Arial, "Helvetica Neue",
     sans-serif, var(--oz-pico-font-family-emoji);
   --oz-pico-font-family: var(--oz-pico-font-family-sans-serif);
-  --oz-pico-font-size: 110%;
+  --oz-pico-font-size: 105%;
   --oz-pico-line-height: 1.5;
-  --oz-pico-spacing: 0.9rem;
-  --oz-pico-form-element-spacing-vertical: 0.35rem;
-  --oz-pico-form-element-spacing-horizontal: 0.55rem;
+  --oz-pico-spacing: 0.95rem;
+  --oz-pico-form-element-spacing-vertical: 0.55rem;
+  --oz-pico-form-element-spacing-horizontal: 0.75rem;
 }
 
 :root:not([data-theme=dark]) {
